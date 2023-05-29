@@ -1,0 +1,32 @@
+.section {
+    margin: 10px 0;
+    background: white;
+    box-shadow: 0 0 5px #ddd;
+}
+
+.section__header {
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+    margin: 10px 0;
+    background: white;
+    box-shadow: 0 0 5px #ddd;
+}
+
+.section__taskListTitleButtons {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    justify-content: end;
+    align-items: center;
+}
+
+@media (max-width: 767px) {
+    .section__taskListTitleButtons {
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+}
+
+
+.section__body {
+    padding: 20px;
+}
