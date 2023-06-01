@@ -1,11 +1,7 @@
 import "./style.css";
 
-const Buttons = ({ tasks, hideDoneTasks }) => {
-    if (tasks.lenght === 0) {
-        return null;
-    }
-
-    return (
+const Buttons = ({ tasks, hideDoneTasks }) => (
+    tasks.length > 0 && (
         <div className="buttons">
             <button className="buttons__button">
                 {hideDoneTasks ? "Pokaż" : "Ukryj"} ukończone
@@ -18,6 +14,6 @@ const Buttons = ({ tasks, hideDoneTasks }) => {
             </button>
         </div>
     )
-};
+);
 
 export default Buttons;
