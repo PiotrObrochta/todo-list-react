@@ -11,6 +11,11 @@
     
 }
 
+.form__input {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
 .form__button {
     background-color: teal;
     color: #ffffff;
@@ -29,9 +34,3 @@
     background-color: hsl(180, 100%, 40%);
 }
 
-.form__field {
-    border: solid 1px hsl(0, 0%, 80%);
-    padding: 10px;
-    height: 25px;
-    font-size: 15px;
-}
