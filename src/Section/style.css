@@ -5,27 +5,20 @@
 }
 
 .section__header {
-    padding: 20px;
     border-bottom: 1px solid #ddd;
-    margin: 10px 0;
-    background: white;
-    box-shadow: 0 0 5px #ddd;
-}
-
-.section__taskListTitleButtons {
     display: grid;
-    grid-template-columns: 1fr auto auto;
-    justify-content: end;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+    justify-content: space-between;
     align-items: center;
+    padding: 20px;
 }
 
-@media (max-width: 767px) {
-    .section__taskListTitleButtons {
+@media(max-width: 767px) {
+    .section__header {
         grid-template-columns: 1fr;
-        grid-gap: 20px;
     }
 }
-
 
 .section__body {
     padding: 20px;
