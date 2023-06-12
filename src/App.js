@@ -3,6 +3,7 @@ import Tasks from "./Tasks";
 import Buttons from "./Buttons";
 import Section from "./Section";
 import Header from "./Header";
+import Container from "./Container";
 
 const tasks = [
     { id: 1, content: "przejść na Reacta", done: false },
@@ -13,7 +14,7 @@ const hideDoneTasks = false;
 
 function App() {
     return (
-        <main className="container">
+        <Container>
             <Header title="Lista zadań" />
             <Section
                 title="Dodaj nowe zadanie"
@@ -26,7 +27,7 @@ function App() {
                 extraHeaderContent={<Buttons tasks={tasks} hideDoneTasks={hideDoneTasks} />}
             />
 
-        </main >
+        </Container>
     );
 }
 
