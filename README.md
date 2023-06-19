@@ -6,6 +6,10 @@
 **This is an application for creating your to-do list, the earlier version of this application was written in pure Java Script and HTML,
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).**
 
+# Direct link to the application ⬇
+
+https://piotrobrochta.github.io/todo-list-react/
+
 ## Available Scripts
 
 In the project directory, you can run:
