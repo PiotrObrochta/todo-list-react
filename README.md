@@ -1,45 +1,18 @@
-# Task list
-
-`Description`
-
-
-**This is an application for creating your to-do list, the earlier version of this application was written in pure Java Script and HTML,
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).**
-
-# Direct link to the application ⬇
-
+# Piotr Obrochta - to do list
+## Link ⬇
 https://piotrobrochta.github.io/todo-list-react/
+## Description
+Hello, in this application I would like to show what I am learning in the next module of the course. Here you can create your own task list, mark the task as done or simply delete it from the list
 
-## Available Scripts
+The animation shows the basic functionality of the task list ⬇
+![to_do_list](https://user-images.githubusercontent.com/122232161/229727170-e7d6d903-6ff7-42c8-b18b-01c4716bd256.gif)
 
-In the project directory, you can run:
+### I used technology 
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
+1. **BEM**  
+2. **JAVA Script**
+3. **ES6+ feature** 
+4. **Flex**
+5. **Grid**
+6. **React**
+7. **Create React App**
