@@ -5,7 +5,8 @@ https://piotrobrochta.github.io/todo-list-react/
 Hello, in this application I would like to show what I am learning in the next module of the course. Here you can create your own task list, mark the task as done or simply delete it from the list
 
 The animation shows the basic functionality of the task list ⬇
-![to_do_list](https://user-images.githubusercontent.com/122232161/229727170-e7d6d903-6ff7-42c8-b18b-01c4716bd256.gif)
+![toDoList21 11 2023](https://github.com/PiotrObrochta/todo-list-react/assets/122232161/2f8bb4a0-0d02-4524-920a-5132064bdaa1)
+
 
 ### I used technology 
 
