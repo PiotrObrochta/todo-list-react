@@ -25,7 +25,7 @@
 }
 
 .buttons__button:active {
-    color: hsl(180, 100%, 40%);
+    color: hsl(180, 100%, 42%);
 }
 
 .buttons__button:disabled {
