@@ -1,8 +1,4 @@
 
-.tasks__done {
-    text-decoration: line-through;
-}
-
 .tasks__added {
     flex-grow: 1;
     text-align: left;

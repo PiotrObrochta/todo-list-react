@@ -14,7 +14,13 @@ export const Item = styled.li`
     padding: 10px;
     border-bottom: 1px solid #ddd;
 
-    ${({hidden}) => hidden && css`
+    ${({ hidden }) => hidden && css`
         display: none;
     `}
 `;
+
+export const Content = styled.span`
+        ${({ done }) => done && css`
+        text-decoration: line-through;
+    `}
+    `;
