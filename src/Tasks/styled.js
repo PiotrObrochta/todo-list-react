@@ -20,7 +20,17 @@ export const Item = styled.li`
 `;
 
 export const Content = styled.span`
-        ${({ done }) => done && css`
+    ${({ done }) => done && css`
         text-decoration: line-through;
     `}
-    `;
+`;
+
+export const button = styled.button`
+    border: none;
+    color: white;
+    width: 30px;
+    height: 30px;
+    padding: 0px;
+    transition: 0.4s;
+    cursor: pointer;
+`;
