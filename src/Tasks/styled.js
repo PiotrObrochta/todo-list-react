@@ -25,12 +25,36 @@ export const Content = styled.span`
     `}
 `;
 
-export const button = styled.button`
+export const Button = styled.button`
     border: none;
     color: white;
     width: 30px;
     height: 30px;
     padding: 0px;
     transition: 0.4s;
-    cursor: pointer;
+    cursor: pointer
+
+    ${({toggleDone}) => toggleDone && css`
+      background: hsl(122, 65%, 29%);
+
+      &:hover {
+        background: hsl(122, 65%, 35%);
+      }
+
+      &:active {
+        background: hsl(122, 65%, 40%);
+    }
+    `}
+
+    ${({ remove}) => remove && css`
+    ;
+
+    &:hover {
+      background: hsl(354, 84%, 60%);
+    }
+
+    &:active {
+      background: hsl(354, 84%, 60%);
+    }
+  `}
 `;
