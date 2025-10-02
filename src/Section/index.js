@@ -1,16 +1,16 @@
 import React from "react";
-import "./style.css";
+import { FormWrapper, Header, Title, Body } from "./styled";
 
 const Section = ({ title, body, extraHeaderContent }) => (
-    <section className="section">
-        <header className="section__header">
-            <h2>{title}</h2>
+    <FormWrapper>
+        <Header>
+            <Title>{title}</Title>
             {extraHeaderContent}
-        </header>
-        <div className="section__body">
+        </Header>
+        <Body>
             {body}
-        </div>
-    </section>
+        </Body>
+    </FormWrapper>
 );
 
 export default Section;
