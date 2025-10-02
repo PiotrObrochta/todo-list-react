@@ -1,7 +1,7 @@
 export const theme = {
-    color: {
+    colors: {
         teal:            "#008181ff",
-        darkTeal:        "#006666",
+        tealHover:        "#006666",
         tealActive:      "#004c4c",
         gray:            "#cccccc",
         borderGray:      "#dddddd",
@@ -14,6 +14,7 @@ export const theme = {
         black:           "rgba(0, 0, 0, 1)",
         white:           "rgba(255, 255, 255, 1)",
     },
+    
     breakpoints: {
         mobileMax: "767px",
     },
