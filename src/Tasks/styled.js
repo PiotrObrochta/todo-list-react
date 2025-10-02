@@ -12,7 +12,7 @@ export const Item = styled.li`
     grid-gap: 10px;
     align-items: center;
     padding: 10px;
-    border-bottom: 1px solid ${({ theme }) => theme.color.gray};
+    border-bottom: 1px solid ${({ theme }) => theme.color.borderGray};
 
     ${({ hidden }) => hidden && css`
         display: none;
@@ -34,27 +34,27 @@ export const Button = styled.button`
     transition: 0.4s;
     cursor: pointer
 
-    ${({toggleDone}) => toggleDone && css`
-      background: ${({ theme }) => theme.color.green};
+    ${({ $toggleDone, theme}) => $toggleDone && css`
+      background: ${theme.color.green};
 
-      &:hover {
-        background: ${({ theme }) => theme.color.greenHover};
+        &:hover {
+        background: ${theme.color.greenHover};
       }
 
-      &:active {
-        background: ${({ theme }) => theme.color.greenActive};
+       &:active {
+        background: ${theme.color.greenActive};
     }
     `}
 
-    ${({ remove}) => remove && css`
-        background: ${({ theme }) => theme.color.redRemove};
+    ${({ $remove, theme }) => $remove && css`
+        background: ${theme.color.redRemove};
 
-    &:hover {
-      background: ${({ theme }) => theme.color.redRemoveHover};
+      &:hover {
+      background: ${theme.color.redRemoveHover};
     }
 
-    &:active {
-      background: ${({ theme }) => theme.color.redRemoveActive};
+      &:active {
+      background: ${theme.color.redRemoveActive};
     }
   `}
 `;
