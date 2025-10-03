@@ -27,16 +27,16 @@ export const Content = styled.span`
 
 export const Button = styled.button`
     border: none;
-    color: ${({ theme }) => theme.color.teal};
+    color: ${({ theme }) => theme.color.white};
     width: 30px;
     height: 30px;
     padding: 0px;
     transition: 0.4s;
-    cursor: pointer
+    cursor: pointer;
+    background: ${({ theme }) => theme.color.green};
 
     ${({ $toggleDone, theme}) => $toggleDone && css`
-      background: ${theme.color.green};
-
+      
         &:hover {
         background: ${theme.color.greenHover};
       }
@@ -47,14 +47,14 @@ export const Button = styled.button`
     `}
 
     ${({ $remove, theme }) => $remove && css`
-        background: ${theme.color.redRemove};
+        background: ${theme.color.red};
 
       &:hover {
-      background: ${theme.color.redRemoveHover};
+      background: ${theme.color.redHover};
     }
 
       &:active {
-      background: ${theme.color.redRemoveActive};
+      background: ${theme.color.redActive};
     }
   `}
 `;
