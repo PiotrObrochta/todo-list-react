@@ -10,9 +10,9 @@ export const theme = {
         green:           "hsl(122, 65%, 29%)",
         greenHover:      "hsl(122, 65%, 35%)",
         greenActive:     "hsl(122, 65%, 40%)",
-        redRemove:       "hsl(354, 84%, 54%)",
-        redRemoveHover:  "hsl(354, 84%, 60%)",
-        redRemoveActive: "hsl(354, 84%, 65%)",
+        red:       "hsl(354, 84%, 54%)",
+        redHover:  "hsl(354, 84%, 60%)",
+        redActive: "hsl(354, 84%, 65%)",
     },
     breakpoints: {
         mobileMax: "767px",
