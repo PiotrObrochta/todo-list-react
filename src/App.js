@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 import { useEffect, useState } from "react";
 import Form from "./Form";
 import Tasks from "./Tasks";
@@ -6,6 +6,8 @@ import Buttons from "./Buttons";
 import Section from "./Section";
 import Header from "./Header";
 import Container from "./Container";
+import { ThemeProvider } from "styled-components";
+import { theme } from "./theme";
 
 
 function App() {
@@ -56,6 +58,7 @@ function App() {
     }
 
     return (
+        <ThemeProvider theme={theme}>
         <Container>
             <Header title="Lista zadań" />
             <Section
@@ -83,6 +86,7 @@ function App() {
             />
 
         </Container>
+        </ThemeProvider>
     );
 }
 
