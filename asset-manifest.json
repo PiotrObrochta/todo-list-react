@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/todo-list-react/static/css/main.6e5512f4.chunk.css",
-    "main.js": "/todo-list-react/static/js/main.a757367f.chunk.js",
-    "main.js.map": "/todo-list-react/static/js/main.a757367f.chunk.js.map",
-    "runtime~main.js": "/todo-list-react/static/js/runtime~main.f82339de.js",
-    "runtime~main.js.map": "/todo-list-react/static/js/runtime~main.f82339de.js.map",
-    "static/js/2.17310738.chunk.js": "/todo-list-react/static/js/2.17310738.chunk.js",
-    "static/js/2.17310738.chunk.js.map": "/todo-list-react/static/js/2.17310738.chunk.js.map",
-    "static/js/3.3b6fb9ae.chunk.js": "/todo-list-react/static/js/3.3b6fb9ae.chunk.js",
-    "static/js/3.3b6fb9ae.chunk.js.map": "/todo-list-react/static/js/3.3b6fb9ae.chunk.js.map",
+    "main.css": "/todo-list-react/static/css/main.d498bfb3.chunk.css",
+    "main.js": "/todo-list-react/static/js/main.6b99f8ad.chunk.js",
+    "main.js.map": "/todo-list-react/static/js/main.6b99f8ad.chunk.js.map",
+    "runtime~main.js": "/todo-list-react/static/js/runtime~main.8a2b5d93.js",
+    "runtime~main.js.map": "/todo-list-react/static/js/runtime~main.8a2b5d93.js.map",
+    "static/js/2.5d3bddce.chunk.js": "/todo-list-react/static/js/2.5d3bddce.chunk.js",
+    "static/js/2.5d3bddce.chunk.js.map": "/todo-list-react/static/js/2.5d3bddce.chunk.js.map",
+    "static/js/3.7426b29a.chunk.js": "/todo-list-react/static/js/3.7426b29a.chunk.js",
+    "static/js/3.7426b29a.chunk.js.map": "/todo-list-react/static/js/3.7426b29a.chunk.js.map",
     "index.html": "/todo-list-react/index.html",
-    "precache-manifest.d000b61caf3e0e889f7bcda90e81838c.js": "/todo-list-react/precache-manifest.d000b61caf3e0e889f7bcda90e81838c.js",
+    "precache-manifest.3fab0b0ca997e54c6ffd39074fe40fc7.js": "/todo-list-react/precache-manifest.3fab0b0ca997e54c6ffd39074fe40fc7.js",
     "service-worker.js": "/todo-list-react/service-worker.js",
-    "static/css/main.6e5512f4.chunk.css.map": "/todo-list-react/static/css/main.6e5512f4.chunk.css.map"
+    "static/css/main.d498bfb3.chunk.css.map": "/todo-list-react/static/css/main.d498bfb3.chunk.css.map"
   }
 }
