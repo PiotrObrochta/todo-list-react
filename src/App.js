@@ -8,6 +8,7 @@ import Header from "./Header";
 import Container from "./Container";
 import { ThemeProvider } from "styled-components";
 import { theme } from "./theme";
+import { GlobalStyle } from './GlobalStyle';
 
 
 function App() {
