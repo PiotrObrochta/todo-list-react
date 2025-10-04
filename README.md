@@ -17,3 +17,4 @@ The animation shows the basic functionality of the task list ⬇
 5. **Grid**
 6. **React**
 7. **Create React App**
+8. **Styled Components**
