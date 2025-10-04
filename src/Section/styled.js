@@ -23,6 +23,7 @@ export const FormWrapper = styled.section`
 export const Title = styled.h2`
   font-size: 20px;
   margin: 0;
+  padding: 20px;
 `;
 
 export const Body = styled.div`
