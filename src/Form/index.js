@@ -26,7 +26,7 @@ const inputRef = useRef(null);
                 onChange={({ target }) => setNewTaskContent(target.value)}
             />
             <Button
-            onClick={focusInput}>
+                onClick={focusInput}>
                 Dodaj zadanie
                 </Button>
         </StyledForm>
