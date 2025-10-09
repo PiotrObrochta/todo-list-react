@@ -1,18 +1,26 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { StyledForm, Input, Button } from "./styled";
 
 const Form = ({ addNewTask }) => {
     const [newTaskContent, setNewTaskContent] = useState("");
+    const inputRef = useRef(null);
+
+    useEffect(() => {
+        inputRef.current.focus();
+    }, []);
 
     const onFormSubmit = (event) => {
         event.preventDefault();
         if (newTaskContent.trim() === "") {
             return;
         }
+
         addNewTask(newTaskContent.trim());
         setNewTaskContent("");
+
+        inputRef.current.focus();
     };
-const inputRef = useRef(null);
+
     const focusInput = () => {
         inputRef.current.focus();
     };
@@ -25,10 +33,9 @@ const inputRef = useRef(null);
                 placeholder="Co jest do zrobienia?"
                 onChange={({ target }) => setNewTaskContent(target.value)}
             />
-            <Button
-                onClick={focusInput}>
+            <Button onClick={focusInput}>
                 Dodaj zadanie
-                </Button>
+            </Button>
         </StyledForm>
     );
 };
