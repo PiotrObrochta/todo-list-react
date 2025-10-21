@@ -1,43 +1,53 @@
 import { useState, useRef, useEffect } from "react";
+import { useDispatch } from "react-redux";
 import { StyledForm, Input, Button } from "./styled";
+import { addTask } from "../tasksSlice";
+import { nanoid } from "@reduxjs/toolkit";
 
-const Form = ({ addNewTask }) => {
-    const [newTaskContent, setNewTaskContent] = useState("");
-    const inputRef = useRef(null);
+const Form = () => {
+  const [newTaskContent, setNewTaskContent] = useState("");
+  const inputRef = useRef(null);
 
-    useEffect(() => {
-        inputRef.current.focus();
-    }, []);
+  const dispatch = useDispatch();
 
-    const onFormSubmit = (event) => {
-        event.preventDefault();
-        if (newTaskContent.trim() === "") {
-            return;
-        }
+  useEffect(() => {
+    inputRef.current.focus();
+  }, []);
 
-        addNewTask(newTaskContent.trim());
-        setNewTaskContent("");
+  const onFormSubmit = (event) => {
+    event.preventDefault();
+    if (newTaskContent.trim() === "") {
+      return;
+    }
 
-        inputRef.current.focus();
-    };
-
-    const focusInput = () => {
-        inputRef.current.focus();
-    };
-
-    return (
-        <StyledForm onSubmit={onFormSubmit}>
-            <Input
-                ref={inputRef}
-                value={newTaskContent}
-                placeholder="Co jest do zrobienia?"
-                onChange={({ target }) => setNewTaskContent(target.value)}
-            />
-            <Button onClick={focusInput}>
-                Dodaj zadanie
-            </Button>
-        </StyledForm>
+    dispatch(
+      addTask({
+        content: newTaskContent.trim(),
+        done: false,
+        id: nanoid(),
+      })
     );
+
+    setNewTaskContent("");
+
+    inputRef.current.focus();
+  };
+
+  const focusInput = () => {
+    inputRef.current.focus();
+  };
+
+  return (
+    <StyledForm onSubmit={onFormSubmit}>
+      <Input
+        ref={inputRef}
+        value={newTaskContent}
+        placeholder="Co jest do zrobienia?"
+        onChange={({ target }) => setNewTaskContent(target.value)}
+      />
+      <Button onClick={focusInput}>Dodaj zadanie</Button>
+    </StyledForm>
+  );
 };
 
 export default Form;

@@ -1,3 +1,4 @@
+import { useSelector } from "react-redux";
 import { useState } from "react";
 import Form from "./Form";
 import TaskList from "./TaskList";
@@ -6,19 +7,22 @@ import Section from "../../common/Section";
 import Header from "../../common/Header";
 import { Container } from "../../common/Container";
 import { useTasks } from "../../useTasks";
+import { selectTasks } from "./tasksSlice";
 
 function Tasks() {
   const [hideDone, setHideDone] = useState(false);
 
+  const { tasks } = useSelector(selectTasks);
+
   const {
-    tasks,
+    //tasks,
     toggleTaskDone,
     removeTask,
     setAllDone,
     addNewTask,
   } = useTasks();
 
-  const toggleHideDone = () => setHideDone(hideDone => !hideDone);
+  const toggleHideDone = () => setHideDone((hideDone) => !hideDone);
 
   return (
     <Container>
