@@ -6,19 +6,24 @@ export const ButtonWrapper = styled.div`
 `;
 
 export const Button = styled.button`
-    border: none;
-    color: ${({ theme }) => theme.color.teal};
-    background-color: transparent;
-    transition: color 0.3s;
-    margin: 0 0 0 20px;
-    cursor: pointer;
+  border: none;
+  color: ${({ theme }) => theme.color.teal};
+  background-color: transparent;
+  transition: color 0.3s;
+  margin: 0 0 0 20px;
+  cursor: pointer;
 
   &:hover {
-        color: ${({ theme }) => theme.color.tealHover};
-  } 
+    color: ${({ theme }) => theme.color.tealHover};
+  }
 
   &:active {
-        color: ${({ theme }) => theme.color.tealActive};
+    color: ${({ theme }) => theme.color.tealActive};
+  }
+
+  &:disabled {
+    color: ${({ theme }) => theme.color.gray};
+    cursor: not-allowed;
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}) {

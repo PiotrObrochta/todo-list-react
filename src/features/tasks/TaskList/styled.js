@@ -1,60 +1,67 @@
 import styled, { css } from "styled-components";
 
 export const List = styled.ul`
-    padding: 0px;
-    margin: 0px;
-    list-style: none;
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
 `;
 
 export const Item = styled.li`
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    grid-gap: 10px;
-    align-items: center;
-    padding: 10px;
-    border-bottom: 1px solid ${({ theme }) => theme.color.borderGray};
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-gap: 10px;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid ${({ theme }) => theme.color.borderGray};
 
-    ${({ hidden }) => hidden && css`
-        display: none;
+  ${({ hidden }) =>
+    hidden &&
+    css`
+      display: none;
     `}
 `;
 
 export const Content = styled.span`
-    ${({ $done }) => $done && css`
-        text-decoration: line-through;
+  ${({ $done }) =>
+    $done &&
+    css`
+      text-decoration: line-through;
     `}
 `;
 
 export const Button = styled.button`
-    border: none;
-    color: ${({ theme }) => theme.color.white};
-    width: 30px;
-    height: 30px;
-    padding: 0px;
-    transition: 0.4s;
-    cursor: pointer;
-    background: ${({ theme }) => theme.color.green};
+  border: none;
+  color: ${({ theme }) => theme.color.white};
+  width: 30px;
+  height: 30px;
+  padding: 0px;
+  transition: 0.4s;
+  cursor: pointer;
+  background: ${({ theme }) => theme.color.green};
 
-    ${({ $toggleDone, theme}) => $toggleDone && css`
-      
-        &:hover {
+  ${({ $toggleDone, theme }) =>
+    $toggleDone &&
+    css`
+      &:hover {
         background: ${theme.color.greenHover};
       }
 
-       &:active {
+      &:active {
         background: ${theme.color.greenActive};
-    }
+      }
     `}
 
-    ${({ $remove, theme }) => $remove && css`
-        background: ${theme.color.red};
+  ${({ $remove, theme }) =>
+    $remove &&
+    css`
+      background: ${theme.color.red};
 
       &:hover {
-      background: ${theme.color.redHover};
-    }
+        background: ${theme.color.redHover};
+      }
 
       &:active {
-      background: ${theme.color.redActive};
-    }
-  `}
+        background: ${theme.color.redActive};
+      }
+    `}
 `;

@@ -38,5 +38,7 @@ export const {
 } = tasksSlice.actions;
 
 export const selectTasks = (state) => state.tasks;
+export const selectAllTasksDone = ({ tasks: { tasks } }) =>
+  tasks.length && tasks.every(({ done }) => done);
 
 export default tasksSlice.reducer;

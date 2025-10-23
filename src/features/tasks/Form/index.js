@@ -29,7 +29,6 @@ const Form = () => {
     );
 
     setNewTaskContent("");
-
     inputRef.current.focus();
   };
 
