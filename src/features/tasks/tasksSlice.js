@@ -50,4 +50,7 @@ export const selectHideDone = (state) => selectTasksState(state).hideDone;
 export const selectAllTasksDone = (state) =>
   selectTasks(state).every(({ done }) => done);
 
+export const getTaskById = (state, taskId) =>
+  selectTasks(state).find(({ id }) => id === taskId);
+
 export default tasksSlice.reducer;
