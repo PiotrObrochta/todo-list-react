@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled, { css } from "styled-components";
 
 export const List = styled.ul`
@@ -64,4 +65,15 @@ export const Button = styled.button`
         background: ${theme.color.redActive};
       }
     `}
+`;
+
+export const TaskLink = styled(Link)`
+  color: ${({ theme }) => theme.color.teal};
+  text-decoration: none;
+
+  &:hover,
+  &:visited,
+  &:active {
+    color: ${({ theme }) => theme.color.teal};
+  }
 `;
