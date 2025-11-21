@@ -1,10 +1,11 @@
 import { Nav, List, StyledNavLink } from "./styled";
+import { toAuthor, toTasks } from "../../routes";
 
 const Navigation = () => (
   <Nav>
     <List>
-      <StyledNavLink to="/zadania">Lista zadań</StyledNavLink>
-      <StyledNavLink to="/autor">O autorze</StyledNavLink>
+      <StyledNavLink to={toTasks()}>Lista zadań</StyledNavLink>
+      <StyledNavLink to={toAuthor()}>O autorze</StyledNavLink>
     </List>
   </Nav>
 );

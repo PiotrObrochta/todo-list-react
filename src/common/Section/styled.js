@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
 export const Header = styled.header`
-    border-bottom: 1px solid ${({ theme }) => theme.color.borderGray};
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-gap: 20px;
-    justify-content: space-between;
-    align-items: center;
-    padding: 3.2px 20px;
+  border-bottom: 1px solid ${({ theme }) => theme.color.borderGray};
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3.2px;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}) {
     grid-template-columns: 1fr;

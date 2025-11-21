@@ -9,6 +9,11 @@ export const StyledNavLink = styled(NavLink)`
   background-color: ${({ theme }) => theme.color.teal};
   border-radius: 5px;
   transition: background-color 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
 
   &.active {
     font-weight: bold;

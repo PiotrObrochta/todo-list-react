@@ -8,6 +8,7 @@ import searchQueryParamName from "../searchQueryParamName.js";
 import { List, Item, Content, Button, TaskLink } from "./styled";
 import { useSelector, useDispatch } from "react-redux";
 import { useLocation } from "react-router-dom";
+import { toTask } from "../../../../routes.js";
 
 const TaskList = () => {
   const location = useLocation();
@@ -26,7 +27,7 @@ const TaskList = () => {
             {task.done ? "✓" : ""}
           </Button>
           <Content $done={task.done}>
-            <TaskLink to={`/zadania/${task.id}`}>{task.content}</TaskLink>
+            <TaskLink to={toTask({ id: task.id })}>{task.content}</TaskLink>
           </Content>
           <Button $remove onClick={() => dispatch(removeTask(task.id))}>
             🗑
